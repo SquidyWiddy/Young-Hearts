@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Hearts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffebcc, #f5f5f5);
+            color: #333;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Pacifico', cursive;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        .watch-now {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .watch-now:hover {
+            transform: scale(1.1);
+            background-color: #ffe5d9;
+            color: #ff6f61;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        .about {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .watch-now {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+            }
+            .video-container iframe {
+                height: 300px;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Young Hearts ( Eng Subs )</h1>
+        <p>"A story of young love, growth, and discovery."</p>
+        <a href="#video-player" class="watch-now">Watch Now</a>
+        <img src="MV5BNTI0MjVmMWUtYTRhZC00NTI0LWE1N2EtZWM3NDBmYmJlOGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Young Hearts Poster" style="width:100%;max-width:1000px;margin-top:20px;">
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About the Movie</h2>
+            <p>
+                <em>Young Hearts</em> explores the complexities of teenage relationships, capturing the joy, uncertainty, and growth that comes with young love. Set in a vibrant community, the film highlights the realistic challenges faced by teens navigating friendship, family, and first loves.
+            </p>
+        </section>
+        <div id="video-player" class="video-container">
+            <iframe src="https://drive.google.com/file/d/1xxHW6Q40zRUdlk08tsgkYN6-R8Ua-9AU/preview" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Young Hearts Fan Page | Designed by David</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
